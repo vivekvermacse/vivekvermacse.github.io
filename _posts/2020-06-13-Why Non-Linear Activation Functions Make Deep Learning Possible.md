@@ -4,7 +4,7 @@ title: "Why Non-Linear Activation Functions Make Deep Learning Possible"
 date: 2020-06-13
 categories: Deep Learning
 ---
-
+---
 ## Introduction: Why Depth Alone Does Not Create Intelligence
 *Why depth alone fails, and how non-linearity gives neural networks their true learning power*
 
@@ -42,15 +42,11 @@ Without non-linear activation functions, adding layers merely stacks linear tran
 
 The geometric intuition becomes unavoidable once we examine the mathematics. Each layer in a neural network performs two operations. First, it applies a linear transformation, typically written as
 
-[
 z = Wx + b
-]
 
 Second, it applies an activation function:
 
-[
 a = g(z)
-]
 
 The expressive power of the network depends critically on the nature of the function ( g ).
 
