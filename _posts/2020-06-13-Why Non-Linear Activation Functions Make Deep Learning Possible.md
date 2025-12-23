@@ -5,14 +5,8 @@ date: 2020-06-13
 categories: Deep Learning
 ---
 
-# Why Non-Linear Activation Functions Make Deep Learning Possible
-
-*Why depth alone fails, and how non-linearity gives neural networks their true learning power*
-
----
-
 ## Introduction: Why Depth Alone Does Not Create Intelligence
-
+*Why depth alone fails, and how non-linearity gives neural networks their true learning power*
 
 Imagine training a neural network with ten layers, thousands of parameters, and hours of compute—only to discover that it performs no better than simple linear regression. Surprisingly, this is not a bug, nor a training failure. It is a **mathematical certainty** when non-linear activation functions are missing.
 
@@ -103,5 +97,3 @@ Depth alone does not make a neural network intelligent. Without non-linear activ
 In modern deep learning systems, non-linear activation functions are not optional enhancements. They are the foundation that makes learning possible. ReLU and its variants power hidden layers, while sigmoid remains useful at the output level for probabilistic interpretation.
 
 In short, **non-linear activation functions are what make the “deep” in deep learning truly meaningful**.
-
----
