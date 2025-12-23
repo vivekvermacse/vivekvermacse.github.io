@@ -1,10 +1,1 @@
-title: ML & AI Systems Blog
-description: Machine Learning, AI Systems, and Engineering
-author:
-  name: Vivek Verma
-
-theme: minima
-plugins:
-  - jekyll-seo-tag
-
 show_excerpts: false
