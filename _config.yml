@@ -1,0 +1,5 @@
+title: Vivek Verma
+description: Machine Learning, AI Systems, and Engineering
+theme: minima
+plugins:
+  - jekyll-seo-tag
