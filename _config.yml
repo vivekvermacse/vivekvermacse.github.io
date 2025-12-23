@@ -1,5 +1,8 @@
-title: Vivek Verma
+title: ML & AI Systems Blog
 description: Machine Learning, AI Systems, and Engineering
+author:
+  name: Vivek Verma
+
 theme: minima
 plugins:
   - jekyll-seo-tag
