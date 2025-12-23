@@ -6,3 +6,5 @@ author:
 theme: minima
 plugins:
   - jekyll-seo-tag
+
+show_excerpts: false
