@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Non-Linear Activation Functions Make Deep Learning Possible"
-date: 2020-06-15
+date: 2020-06-13
 categories: Deep Learning
 ---
 
@@ -105,5 +105,3 @@ In modern deep learning systems, non-linear activation functions are not optiona
 In short, **non-linear activation functions are what make the “deep” in deep learning truly meaningful**.
 
 ---
-Just tell me.
-
