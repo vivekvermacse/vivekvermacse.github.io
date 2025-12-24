@@ -7,8 +7,6 @@ categories: Deep Learning, Generative AI, Large Language Model, LLM
 permalink: /2023/03/15/from-vectors-to-meaning-inside-the-attention-mechanism.html
 ---
 
-# From Vectors to Meaning: Inside the Attention Mechanism
-
 **The math that actually explains how transformers understand language**
 
 If you have ever tried to dig into how Large Language Models (LLMs) like ChatGPT actually "read," you have almost certainly run into the word **Attention**.
