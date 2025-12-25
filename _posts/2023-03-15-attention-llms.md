@@ -143,29 +143,8 @@ Suddenly, "it" is no longer just one vector. It has split into a **Query vector*
 
 Now, the "dating game" begins. We need to calculate how much "it" should attend to every other word. We do this by taking the dot product of the Query and the Keys.
 
-Score
-𝑖
-𝑡
-,
-𝑗
-=
-𝑄
-𝑖
-𝑡
-⋅
-𝐾
-𝑗
-Score
-it,j
-	​
-
-=Q
-it
-	​
-
-⋅K
-j
-	​
+$$Score_𝑖𝑡,𝑗$$ = $$𝑄_𝑖t$$⋅$$K_j$$
+​
 
 
 The dot product is essentially a similarity test. If the numbers align, the score is high.
