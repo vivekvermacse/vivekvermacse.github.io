@@ -98,7 +98,6 @@ W_Q,\; W_K,\; W_V
 
 For example, let's look at some hypothetical trained values for these matrices:
 
-$$
 W_Q =
 \begin{pmatrix}
 0.2 & 0.8 & 0.5 & 0.1 \\
@@ -106,7 +105,6 @@ W_Q =
 0.5 & 0.4 & 0.6 & 0.2 \\
 0.1 & 0.2 & 0.7 & 0.3
 \end{pmatrix}
-$$
 
 $$
 W_K =
