@@ -141,11 +141,9 @@ Suddenly, "it" is no longer just one vector. It has split into a **Query vector*
 
 ### Step 5: Computing the Attention Score
 
-Now, the "dating game" begins. We need to calculate how much "it" should attend to every other word. We do this by taking the dot product of the Query and the Keys.
+Now, the "dating game" begins. We need to calculate how much "it" should attend to every other word. We do this by taking the dot product of the Query for it with the Keys for every word j .
 
-$$Score_𝑖𝑡,𝑗$$ = $$𝑄_𝑖t$$⋅$$K_j$$
-​
-
+Score_𝑖𝑡,𝑗 = 𝑄_𝑖t ⋅ K_j
 
 The dot product is essentially a similarity test. If the numbers align, the score is high.
 
@@ -159,47 +157,7 @@ Score with sat: 0.8 (Very low match)
 
 These raw scores are messy, so we normalize them using Softmax. This turns them into clean percentages that add up to 1 (or 100%).
 
-Weight
-𝑖
-𝑡
-,
-𝑗
-=
-𝑒
-Score
-𝑖
-𝑡
-,
-𝑗
-∑
-𝑘
-𝑒
-Score
-𝑖
-𝑡
-,
-𝑘
-Weight
-it,j
-	​
-
-=
-∑
-k
-	​
-
-e
-Score
-it,k
-	​
-
-e
-Score
-it,j
-	​
-
-	​
-
+Weight_𝑖𝑡,𝑗 =  ePow(Score_𝑖𝑡,𝑗) / $$ ∑_k $$ ePow(Score_𝑖𝑡,k)  
 
 The result:
 
