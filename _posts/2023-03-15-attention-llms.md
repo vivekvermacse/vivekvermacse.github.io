@@ -94,7 +94,7 @@ Let's look at the actual math. Take our sentence:
 Each word enters the layer as an embedding vector. For simplicity, let's imagine our vectors are just 4 dimensions long.
 
 The model learns three massive weight matrices during training. These are the "knobs" the AI tunes to learn language: 
-W_Q,\; W_K,\; W_V
+W_Q, W_K, W_V
 
 For example, let's look at some hypothetical trained values for these matrices:
 
