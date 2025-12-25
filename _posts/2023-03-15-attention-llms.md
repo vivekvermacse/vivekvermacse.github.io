@@ -157,7 +157,7 @@ Score with sat: 0.8 (Very low match)
 
 These raw scores are messy, so we normalize them using Softmax. This turns them into clean percentages that add up to 1 (or 100%).
 
-Weight_𝑖𝑡,𝑗 =  ePow(Score_𝑖𝑡,𝑗) / $$ ∑_k $$ ePow(Score_𝑖𝑡,k)  
+Weight_𝑖𝑡,𝑗 =  ePow(Score_𝑖𝑡,𝑗) / $$∑_k$$ ePow(Score_𝑖𝑡,k)  
 
 The result:
 
