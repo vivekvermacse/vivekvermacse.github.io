@@ -141,27 +141,94 @@ Suddenly, "it" is no longer just one vector. It has split into a **Query vector*
 
 ### Step 5: Computing the Attention Score
 
-Now, the "dating game" begins. We need to calculate how much **"it"** should attend to every other word. We do this by taking the dot product of the Query and the Keys.
+Now, the "dating game" begins. We need to calculate how much "it" should attend to every other word. We do this by taking the dot product of the Query and the Keys.
 
-$\text{Score}_{it,j} = Q_{it} \cdot K_j$
+Score
+𝑖
+𝑡
+,
+𝑗
+=
+𝑄
+𝑖
+𝑡
+⋅
+𝐾
+𝑗
+Score
+it,j
+	​
+
+=Q
+it
+	​
+
+⋅K
+j
+	​
+
 
 The dot product is essentially a similarity test. If the numbers align, the score is high.
 
-**Hypothetical scores might look like this:**
+Hypothetical scores might look like this:
 
-- Score with **cat**: 3.5 (High match)  
-- Score with **mat**: 1.0 (Low match)  
-- Score with **sat**: 0.8 (Very low match)
+Score with cat: 3.5 (High match)
 
-These raw scores are messy, so we normalize them using **Softmax**. This turns them into clean percentages that add up to 1 (or 100%).
+Score with mat: 1.0 (Low match)
 
-$\text{Weight}_{it,j} = \frac{e^{\text{Score}_{it,j}}}{\sum_k e^{\text{Score}_{it,k}}}$
+Score with sat: 0.8 (Very low match)
 
-**The result:**
+These raw scores are messy, so we normalize them using Softmax. This turns them into clean percentages that add up to 1 (or 100%).
 
-- **cat**: 0.70 (70%)  
-- **mat**: 0.08 (8%)  
-- **sat**: 0.05 (5%)
+Weight
+𝑖
+𝑡
+,
+𝑗
+=
+𝑒
+Score
+𝑖
+𝑡
+,
+𝑗
+∑
+𝑘
+𝑒
+Score
+𝑖
+𝑡
+,
+𝑘
+Weight
+it,j
+	​
+
+=
+∑
+k
+	​
+
+e
+Score
+it,k
+	​
+
+e
+Score
+it,j
+	​
+
+	​
+
+
+The result:
+
+cat: 0.70 (70%)
+
+mat: 0.08 (8%)
+
+sat: 0.05 (5%)
 
 ---
 
