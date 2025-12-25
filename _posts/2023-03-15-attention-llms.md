@@ -97,17 +97,18 @@ The model learns three massive weight matrices during training. These are the "k
 W_Q,\; W_K,\; W_V
 
 For example, let's look at some hypothetical trained values for these matrices:
-
-W_Q =
+$$
+W _Q =
 \begin{pmatrix}
 0.2 & 0.8 & 0.5 & 0.1 \\
 0.9 & 0.3 & 0.2 & 0.7 \\
 0.5 & 0.4 & 0.6 & 0.2 \\
 0.1 & 0.2 & 0.7 & 0.3
 \end{pmatrix}
+$$
 
 $$
-W_K =
+W _K =
 \begin{pmatrix}
 0.7 & 0.3 & 0.6 & 0.5 \\
 0.4 & 0.9 & 0.1 & 0.2 \\
@@ -117,7 +118,7 @@ W_K =
 $$
 
 $$
-W_V =
+W _V =
 \begin{pmatrix}
 0.6 & 0.4 & 0.3 & 0.2 \\
 0.5 & 0.1 & 0.7 & 0.4 \\
