@@ -99,7 +99,6 @@ W_Q,\; W_K,\; W_V
 For example, let's look at some hypothetical trained values for these matrices:
 
 $$
-
 W_Q =
 \begin{pmatrix}
 0.2 & 0.8 & 0.5 & 0.1 \\
@@ -107,11 +106,9 @@ W_Q =
 0.5 & 0.4 & 0.6 & 0.2 \\
 0.1 & 0.2 & 0.7 & 0.3
 \end{pmatrix}
-
 $$
 
 $$
-
 W_K =
 \begin{pmatrix}
 0.7 & 0.3 & 0.6 & 0.5 \\
@@ -119,11 +116,9 @@ W_K =
 0.2 & 0.1 & 0.8 & 0.6 \\
 0.3 & 0.5 & 0.4 & 0.7
 \end{pmatrix}
-
 $$
 
 $$
-
 W_V =
 \begin{pmatrix}
 0.6 & 0.4 & 0.3 & 0.2 \\
@@ -131,7 +126,6 @@ W_V =
 0.8 & 0.2 & 0.5 & 0.1 \\
 0.3 & 0.7 & 0.4 & 0.9
 \end{pmatrix}
-
 $$
 
 
@@ -147,19 +141,27 @@ Suddenly, "it" is no longer just one vector. It has split into a **Query vector*
 
 ### Step 5: Computing the Attention Score
 
-Now, the "dating game" begins. We calculate how much "it" should attend to every other word by taking the dot product of the Query and the Keys.
+Now, the "dating game" begins. We need to calculate how much **"it"** should attend to every other word. We do this by taking the dot product of the Query and the Keys.
 
-**Hypothetical scores:**
+$\text{Score}_{it,j} = Q_{it} \cdot K_j$
 
-* Score with cat: 3.5  
-* Score with mat: 1.0  
-* Score with sat: 0.8  
+The dot product is essentially a similarity test. If the numbers align, the score is high.
 
-Normalize them using **Softmax**:
+**Hypothetical scores might look like this:**
 
-* cat: 0.70 (70%)  
-* mat: 0.08 (8%)  
-* sat: 0.05 (5%)
+- Score with **cat**: 3.5 (High match)  
+- Score with **mat**: 1.0 (Low match)  
+- Score with **sat**: 0.8 (Very low match)
+
+These raw scores are messy, so we normalize them using **Softmax**. This turns them into clean percentages that add up to 1 (or 100%).
+
+$\text{Weight}_{it,j} = \frac{e^{\text{Score}_{it,j}}}{\sum_k e^{\text{Score}_{it,k}}}$
+
+**The result:**
+
+- **cat**: 0.70 (70%)  
+- **mat**: 0.08 (8%)  
+- **sat**: 0.05 (5%)
 
 ---
 
