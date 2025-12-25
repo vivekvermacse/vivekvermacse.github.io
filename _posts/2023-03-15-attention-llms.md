@@ -98,7 +98,7 @@ W_Q,\; W_K,\; W_V
 
 
 For example, let's look at some hypothetical trained values for these matrices:
-
+$$
 W_Q =
 \begin{pmatrix}
 0.2 & 0.8 & 0.5 & 0.1 \\
@@ -107,6 +107,8 @@ W_Q =
 0.1 & 0.2 & 0.7 & 0.3
 \end{pmatrix}
 
+$$
+$$
 W_K =
 \begin{pmatrix}
 0.7 & 0.3 & 0.6 & 0.5 \\
@@ -114,9 +116,8 @@ W_K =
 0.2 & 0.1 & 0.8 & 0.6 \\
 0.3 & 0.5 & 0.4 & 0.7
 \end{pmatrix}
-
-
-
+$$
+$$
 W_V =
 \begin{pmatrix}
 0.6 & 0.4 & 0.3 & 0.2 \\
@@ -124,7 +125,7 @@ W_V =
 0.8 & 0.2 & 0.5 & 0.1 \\
 0.3 & 0.7 & 0.4 & 0.9
 \end{pmatrix}
-
+$$
 
 To get the Query, Key, and Value for a word (let's call the word vector x), we simply multiply:
 
