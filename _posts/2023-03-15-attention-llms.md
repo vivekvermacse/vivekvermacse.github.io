@@ -227,5 +227,5 @@ That is attention. It is not magic. It is not heuristics. It is geometry trained
 2. **Andrew Ng:** Deep Learning Specialization  
    [Check out the course here](https://www.deeplearning.ai/courses/deep-learning-specialization/)
    
-3. **Grant Sanderson (3Blue1Brown):** Visualizing Attention
+3. **Grant Sanderson (3Blue1Brown):** Visualizing Attention  
    [Watch the video here](https://www.youtube.com/watch?v=KJtZARuO3JY&t=2602s)
