@@ -94,41 +94,41 @@ Let's look at the actual math. Take our sentence:
 Each word enters the layer as an embedding vector. For simplicity, let's imagine our vectors are just 4 dimensions long.
 
 The model learns three massive weight matrices during training. These are the "knobs" the AI tunes to learn language: 
-\[
-W_Q, \quad W_K, \quad W_V
-\]
+$$
+W_Q,\; W_K,\; W_V
+$$
 
 For example, let's look at some hypothetical trained values for these matrices:
 
-\[
+$$
 W_Q =
-\begin{bmatrix}
+\begin{pmatrix}
 0.2 & 0.8 & 0.5 & 0.1 \\
 0.9 & 0.3 & 0.2 & 0.7 \\
 0.5 & 0.4 & 0.6 & 0.2 \\
 0.1 & 0.2 & 0.7 & 0.3
-\end{bmatrix}
-\]
+\end{pmatrix}
+$$
 
-\[
+$$
 W_K =
-\begin{bmatrix}
+\begin{pmatrix}
 0.7 & 0.3 & 0.6 & 0.5 \\
 0.4 & 0.9 & 0.1 & 0.2 \\
 0.2 & 0.1 & 0.8 & 0.6 \\
 0.3 & 0.5 & 0.4 & 0.7
-\end{bmatrix}
-\]
+\end{pmatrix}
+$$
 
-\[
+$$
 W_V =
-\begin{bmatrix}
+\begin{pmatrix}
 0.6 & 0.4 & 0.3 & 0.2 \\
 0.5 & 0.1 & 0.7 & 0.4 \\
 0.8 & 0.2 & 0.5 & 0.1 \\
 0.3 & 0.7 & 0.4 & 0.9
-\end{bmatrix}
-\]
+\end{pmatrix}
+$$
 
 To get the Query, Key, and Value for a word (let's call the word vector x), we simply multiply:
 
