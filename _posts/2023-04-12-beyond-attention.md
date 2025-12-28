@@ -8,7 +8,6 @@ permalink: /2023/04/12/beyond-attention-how-language-models-truly-think.html
 
 <p><em>Updated: <time datetime="2025-03-31T10:00:00-08:00">March 31, 2025</time></em></p>
 
-
 *Tokenization, positional encoding, and the MLP — the quiet engines behind the magic*
 
 Let’s be honest: in the world of LLMs, Attention steals the show.
@@ -29,7 +28,7 @@ Without the reporters and the time-stamps, the journalist has no data to look at
 
 To process a sentence like “The cat sat on the mat because it was tired,” these heroes have to work in a specific, rhythmic sequence. They are the reason an LLM feels like a reasoning engine rather than just a sophisticated version of autocomplete.
 
-Let’s meet these other heros in large language model world.
+Let’s meet the unsung heroes of the LLM world.
 
 ---
 
