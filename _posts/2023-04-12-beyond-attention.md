@@ -353,5 +353,7 @@ Some real-world numbers for context:
 * **Embeddings** are the dictionary — initially static, later dynamically enriched by context.
 * **Positional Encoding** ensures that order matters in language.
 
-Together, these hidden heroes turn **raw internet text** into something that behaves like understanding. They may be behind the scenes, but without them, Attention alone would be powerless — just shuffling meaningless noise.
 ---
+
+Together, these hidden heroes turn **raw internet text** into something that behaves like understanding. They may be behind the scenes, but without them, Attention alone would be powerless — just shuffling meaningless noise.
+
