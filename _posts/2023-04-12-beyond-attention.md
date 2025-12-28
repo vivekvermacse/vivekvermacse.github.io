@@ -123,9 +123,7 @@ The flow looks like this:
 2. **One-hot vector**: mostly zeros, with a 1 at position 4932
 3. **Embedding lookup**: multiply the one-hot vector by the embedding matrix (E) to produce a dense vector
 
-\[
-\text{Embedding} = \text{OneHot}(ID) \cdot E
-\]
+**Embedding = OneHot(ID) · E**
 
 Modern frameworks optimize this without creating huge sparse vectors, but conceptually this is how the mapping works.
 
