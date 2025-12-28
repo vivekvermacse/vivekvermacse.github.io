@@ -17,32 +17,14 @@ In [Part 1](https://medium.com/@vivekverma.cse/from-vectors-to-meaning-inside-th
 
 It’s a routing system, a way for the model to decide *which words should interact with each other*. But the actual “thinking” happens elsewhere. Without the supporting systems, Attention would just shuffle meaningless vectors around.
 
-So who are the real heroes quietly doing the heavy lifting?
+So, who are the quiet heroes making sense of the words you type?
 
-1. **Tokenization** — turning raw text into numbers  
-2. **Embeddings - converting those numbers into a form the model can manipulate  
-3. **Positional encoding** — giving these numbers a sense of order  
-4. **The MLP (feed-forward network)** — where the model actually processes and interprets information  
+1. **Tokenization** — slicing raw text into manageable numbers  
+2. **Embeddings** — turning those numbers into vectors the model can actually “think” about  
+3. **Positional encoding** — giving each token a sense of its place in the sentence  
+4. **The MLP (feed-forward network)** — the stage where the model truly processes and interprets the information  
 
-Before we dive into these, let’s address an important distinction:
-
-In older NLP systems, like 2013-era Word2Vec, embeddings were **pretrained** and then “plugged in.” You got a fixed vector for each word, and that was it. Transformers do it differently. In a modern LLM:
-
-- The **embedding matrix** is just another set of weights in the network.  
-- It starts as **random noise**.  
-- It is learned **jointly** with attention weights and the MLP weights.  
-
-Everything evolves together. This means that while embeddings give words an initial representation, their meaning **continues to evolve** inside the network as the model applies attention and passes the data through multiple layers.
-
-We also need to keep in mind **real-world constraints**: LLMs are trained on massive text datasets, sometimes many terabytes from the internet. The model cannot read all that at once. So the training data is **chunked into sequences** of a certain length — for example:
-
-- GPT-3: 2048 tokens  
-- GPT-4: up to 8k–32k tokens  
-- Claude 3: up to 200k tokens  
-
-These chunks define the **context window**. During training, the model learns relationships **within those windows**. During inference, a shorter prompt is enough; the model does not pad unused tokens with zeros, it simply processes the given sequence.
-
-Now that we understand the stage and the rules, let’s see how a sentence enters an LLM and gradually transforms from plain text into something the model can reason with.
+Now, let’s dive in and see how these unsung heroes work together to take a plain sentence and gradually transform it into a rich, context-aware representation that the model can reason with.
 
 ---
 
