@@ -11,20 +11,25 @@ permalink: /2023/04/12/beyond-attention-how-language-models-truly-think.html
 
 *Tokenization, positional encoding, and the MLP — the quiet engines behind the magic*
 
-In [Part 1](https://medium.com/@vivekverma.cse/from-vectors-to-meaning-inside-the-attention-mechanism-a2fabbb2e1f4), we explored **Attention** — the mechanism that lets a model connect “it” to “the cat.” Everyone talks about Attention like it’s the celebrity of the AI world. But here’s the truth that often surprises people:
+Let’s be honest: in the world of LLMs, Attention steals the show.
 
-> **Attention doesn’t actually understand anything.**
+If you ask anyone how ChatGPT works, they usually point to the "Attention Mechanism." And they aren't wrong—Attention is brilliant. It’s the spotlight that lets the model scan a sentence and realize that the word "it" is actually talking about "cat." in the sentence "The cat sat on the mat because it was tired."
 
-It’s a routing system, a way for the model to decide *which words should interact with each other*. But the actual “thinking” happens elsewhere. Without the supporting systems, Attention would just shuffle meaningless vectors around.
+To understand how a model actually thinks, imagine an investigative journalist working on a story:
 
-So, who are the quiet heroes making sense of the words you type?
+Tokenization & Embeddings are the Field Reporters. They take the messy, raw events of the world and translate them into a coded language of facts and data points that the newsroom can process.
 
-1. **Tokenization** — slicing raw text into manageable numbers  
-2. **Embeddings** — turning those numbers into vectors the model can actually “think” about  
-3. **Positional encoding** — giving each token a sense of its place in the sentence  
-4. **The MLP (feed-forward network)** — the stage where the model truly processes and interprets the information  
+Positional Encoding is the Time-Stamping. Before any analysis happens, every piece of data is marked with exactly when and where it occurred. Without this, the journalist wouldn't know if the "crime" happened before or after the "arrest."
 
-Now, let’s dive in and see how these unsung heroes work together to take a plain sentence and gradually transform it into a rich, context-aware representation that the model can reason with.
+Attention is the Connection-Seeker. This is the journalist pinning photos to a corkboard and drawing red strings between them. It realizes, "Hey, this person (it) is actually linked to this event (the cat)."
+
+The MLP (Feed-Forward Network) is the Editor. After the strings are drawn, the Editor sits down to actually write the story. They take those raw connections and turn them into a logical narrative. They are the "brains" that decide what the connections actually mean.
+
+Without the reporters and the time-stamps, the journalist has no data to look at. And without the Editor, all you have is a corkboard full of string but no actual story.
+
+To process a sentence like “The cat sat on the mat because it was tired,” these heroes have to work in a specific, rhythmic sequence. They are the reason an LLM feels like a reasoning engine rather than just a sophisticated version of autocomplete.
+
+Let’s meet these other heros in large language model world.
 
 ---
 
