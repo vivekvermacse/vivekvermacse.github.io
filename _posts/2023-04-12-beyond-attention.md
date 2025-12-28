@@ -171,14 +171,14 @@ Transformers do this with **positional encoding**, a clever mathematical trick t
 
 The classic approach uses **sine and cosine functions** of different frequencies. For position (`pos`) and embedding dimension (`i`):
 
-\[
-\text{PE}_{(pos, 2i)} = \sin\!\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right), \quad
-\text{PE}_{(pos, 2i+1)} = \cos\!\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)
-\]
+**PE(pos, 2i) = sin( pos / 10000^(2i / d_model) )**  
+**PE(pos, 2i+1) = cos( pos / 10000^(2i / d_model) )**
 
-- \(d_{\text{model}}\) = embedding size  
-- \(i\) = dimension index  
-- Even indices use sine, odd indices use cosine  
+Where:
+
+- `d_model` = embedding size  
+- `i` = dimension index  
+- Even dimensions use **sine**, odd dimensions use **cosine**
 
 Then the positional encoding is **added element-wise** to the token embedding.
 
