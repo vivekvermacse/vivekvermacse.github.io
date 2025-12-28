@@ -3,7 +3,7 @@ layout: post
 title: "Beyond Attention: How Language Models Truly Think"
 date: 2023-04-12 10:00:00 -0800
 categories: Deep Learning, Generative AI, Large Language Model, LLM
-permalink: /2023/03/15/from-vectors-to-meaning-inside-the-attention-mechanism.html
+permalink: /2023/03/15/beyond-attention-how-language-models-truly-think.html
 ---
 
 <p><em>Updated: <time datetime="2025-03-31T10:00:00-08:00">March 31, 2025</time></em></p>
