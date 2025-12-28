@@ -20,8 +20,8 @@ It’s a routing system, a way for the model to decide *which words should inter
 So who are the real heroes quietly doing the heavy lifting?
 
 1. **Tokenization** — turning raw text into numbers  
-2. **Embeddings - converting those numbers into a form the model can manipulate
-3. **positional encoding** — giving these numbers a sense of order  
+2. **Embeddings - converting those numbers into a form the model can manipulate 
+3. **Positional encoding** — giving these numbers a sense of order  
 4. **The MLP (feed-forward network)** — where the model actually processes and interprets information  
 
 Before we dive into these, let’s address an important distinction:
