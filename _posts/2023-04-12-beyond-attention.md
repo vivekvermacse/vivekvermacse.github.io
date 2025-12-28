@@ -12,7 +12,7 @@ permalink: /2023/03/15/beyond-attention-how-language-models-truly-think.html
 
 *Tokenization, positional encoding, and the MLP — the quiet engines behind the magic*
 
-In [Part 1](https://www.google.com/search?q=link-to-part-1), we explored **Attention** — the mechanism that lets a model connect “it” to “the cat.” Everyone talks about Attention like it’s the celebrity of the AI world. But here’s the truth that often surprises people:
+In [Part 1](https://medium.com/@vivekverma.cse/from-vectors-to-meaning-inside-the-attention-mechanism-a2fabbb2e1f4), we explored **Attention** — the mechanism that lets a model connect “it” to “the cat.” Everyone talks about Attention like it’s the celebrity of the AI world. But here’s the truth that often surprises people:
 
 > **Attention doesn’t actually understand anything.**
 
