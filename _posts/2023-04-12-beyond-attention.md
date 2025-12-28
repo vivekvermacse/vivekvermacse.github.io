@@ -192,16 +192,27 @@ Then the positional encoding is **added element-wise** to the token embedding.
 
 **Example (toy version)**:
 
-Suppose embedding dimension \(d_{\text{model}} = 4\). For positions 1 and 2:
+Suppose the embedding dimension is:
+d_model = 4
+For position pos = 1:
+PE(1) = [
+  sin(1 / 10000^(0/4)),
+  cos(1 / 10000^(0/4)),
+  sin(1 / 10000^(2/4)),
+  cos(1 / 10000^(2/4))
+]
+Numerically:
+PE(1) ≈ [ 0.8415, 0.5403, 0.01, 0.99995 ]
 
-\[
-\begin{aligned}
-\text{PE}_{pos=1} &= [\sin(1/10000^{0/4}), \cos(1/10000^{0/4}), \sin(1/10000^{2/4}), \cos(1/10000^{2/4})] \\
-&\approx [0.8415, 0.5403, 0.01, 0.99995] \\
-\text{PE}_{pos=2} &= [\sin(2/10000^{0/4}), \cos(2/10000^{0/4}), \sin(2/10000^{2/4}), \cos(2/10000^{2/4})] \\
-&\approx [0.9093, -0.4161, 0.02, 0.9998]
-\end{aligned}
-\]
+For position pos = 2:
+PE(2) = [
+  sin(2 / 10000^(0/4)),
+  cos(2 / 10000^(0/4)),
+  sin(2 / 10000^(2/4)),
+  cos(2 / 10000^(2/4))
+]
+Numerically:
+PE(2) ≈ [ 0.9093, -0.4161, 0.02, 0.9998 ]
 
 - Notice how each position vector is **distinct**.  
 - Adding this to the token embedding gives the model **both meaning and location** for every word.
